@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Taqneeq 18.0</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+  <style>
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: white;
+  color: #333;
+}
+
+.container {
+  display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 100px;
+  background-color: #f9f9f9;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  border-right: 1px solid #ddd;
+  position: fixed;
+  height: 100vh;
+}
+
+.sunflower-img {
+  width: 60px;
+}
+
+.stamp-img {
+  width: 70px;
+  border: 4px solid white;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  border-radius: 4px;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #888;
+  font-size: 12px;
+}
+
+.nav-links a.active {
+  font-weight: bold;
+  color: black;
+}
+
+/* Main content */
+.main-content {
+  margin-left: 120px;
+  padding: 40px;
+  position: relative;
+  width: calc(100% - 120px);
+}
+
+.register-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.pixel-heading {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Rotated image */
+.rotated-img {
+  position: absolute;
+  top: 60px;
+  right: 40px;
+  width: 70px;
+  transform: rotate(45deg);
+  border-radius: 12px;
+}
+
+/* Main image */
+.main-image {
+  width: 100%;
+  max-width: 1000px;
+  height: 400px;
+  background-image: url('landscape.png'); /* Replace with your path */
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+}
+ </style>
+
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <img src="sunflower.png" alt="Sunflower" class="sunflower-img">
+      <img src="stamp.png" alt="Stamp" class="stamp-img">
+
+      <nav class="nav-links">
+        <a href="#" class="active">About</a>
+        <a href="#">Events</a>
+        <a href="#">Competition</a>
+        <a href="#">Contact</a>
+        <a href="#">App</a>
+        <a href="#">Home</a>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Register Button -->
+      <button class="register-btn">Register Now!</button>
+
+      <!-- Rotated Image -->
+      <img src="diamond.png" alt="Diamond" class="rotated-img">
+
+      <!-- Heading -->
+      <h1 class="pixel-heading">Taqneeq 18.0 Is Back.</h1>
+
+      <!-- Subtext -->
+      <p class="description">
+        Taqneeq is where aspiring tech enthusiasts, developers, and visionaries<br>
+        come together to compete, learn, and revolutionize the future. With a perfect<br>
+        blend of competitions, workshops, hackathons, and exhibitions, this year's<br>
+        edition promises to be bigger and better than ever before.
+      </p>
+
+      <!-- Main Image -->
+      <div class="main-image"></div>
+    </main>
+  </div>
+</body>
+</html>
